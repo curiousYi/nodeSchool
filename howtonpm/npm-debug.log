@@ -1,0 +1,85 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/Users/yichao/.npm-packages/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@4.0.2
+3 info using node@v6.2.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/yichao/Desktop/FullstackAcademy/projects/nodeSchool/howtonpm',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/yichao/.npm/@chaoticbear/howtonpm/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/yichao/.npm correctMkdir not in flight; initializing
+10 info lifecycle @chaoticbear/howtonpm@1.0.0~prepublish: @chaoticbear/howtonpm@1.0.0
+11 silly lifecycle @chaoticbear/howtonpm@1.0.0~prepublish: no script for prepublish, continuing
+12 info lifecycle @chaoticbear/howtonpm@1.0.0~prepare: @chaoticbear/howtonpm@1.0.0
+13 silly lifecycle @chaoticbear/howtonpm@1.0.0~prepare: no script for prepare, continuing
+14 verbose tar pack [ '/Users/yichao/.npm/@chaoticbear/howtonpm/1.0.0/package.tgz',
+14 verbose tar pack   '/Users/yichao/Desktop/FullstackAcademy/projects/nodeSchool/howtonpm' ]
+15 verbose tarball /Users/yichao/.npm/@chaoticbear/howtonpm/1.0.0/package.tgz
+16 verbose folder /Users/yichao/Desktop/FullstackAcademy/projects/nodeSchool/howtonpm
+17 verbose addLocalTarball adding from inside cache /Users/yichao/.npm/@chaoticbear/howtonpm/1.0.0/package.tgz
+18 verbose correctMkdir /Users/yichao/.npm correctMkdir not in flight; initializing
+19 silly cache afterAdd @chaoticbear/howtonpm@1.0.0
+20 verbose afterAdd /Users/yichao/.npm/@chaoticbear/howtonpm/1.0.0/package/package.json not in flight; writing
+21 verbose correctMkdir /Users/yichao/.npm correctMkdir not in flight; initializing
+22 verbose afterAdd /Users/yichao/.npm/@chaoticbear/howtonpm/1.0.0/package/package.json written
+23 silly publish { name: '@chaoticbear/howtonpm',
+23 silly publish   version: '1.0.0',
+23 silly publish   description: 'blah blah blah',
+23 silly publish   main: 'index.js',
+23 silly publish   scripts: { test: 'node test.js' },
+23 silly publish   respository: 'http://github.com/curiousyi/',
+23 silly publish   author: '',
+23 silly publish   license: 'ISC',
+23 silly publish   readme: 'blah blah blah\n',
+23 silly publish   readmeFilename: 'README.md',
+23 silly publish   _id: '@chaoticbear/howtonpm@1.0.0',
+23 silly publish   _shasum: '9a36de79aab99124d94af070d65598c0471c6a04',
+23 silly publish   _from: '.' }
+24 info lifecycle @chaoticbear/howtonpm@1.0.0~prepublishOnly: @chaoticbear/howtonpm@1.0.0
+25 silly lifecycle @chaoticbear/howtonpm@1.0.0~prepublishOnly: no script for prepublishOnly, continuing
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name @chaoticbear/howtonpm
+28 silly mapToRegistry scope (from package name) @chaoticbear
+29 verbose mapToRegistry no registry URL found in name for scope @chaoticbear
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry http://localhost:15443/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: '@chaoticbear/howtonpm',
+32 silly mapToRegistry   scope: '@chaoticbear',
+32 silly mapToRegistry   escapedName: '@chaoticbear%2fhowtonpm',
+32 silly mapToRegistry   name: '@chaoticbear/howtonpm',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri http://localhost:15443/@chaoticbear%2fhowtonpm
+34 verbose publish registryBase http://localhost:15443/
+35 silly publish uploading /Users/yichao/.npm/@chaoticbear/howtonpm/1.0.0/package.tgz
+36 verbose stack Error: auth required for publishing
+36 verbose stack     at CachingRegistryClient.publish (/Users/yichao/.npm-packages/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+36 verbose stack     at /Users/yichao/.npm-packages/lib/node_modules/npm/lib/publish.js:137:14
+36 verbose stack     at mapToRegistry (/Users/yichao/.npm-packages/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
+36 verbose stack     at publish_ (/Users/yichao/.npm-packages/lib/node_modules/npm/lib/publish.js:108:3)
+36 verbose stack     at Array.<anonymous> (/Users/yichao/.npm-packages/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+36 verbose stack     at LOOP (/Users/yichao/.npm-packages/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+36 verbose stack     at /Users/yichao/.npm-packages/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+36 verbose stack     at done (/Users/yichao/.npm-packages/lib/node_modules/npm/lib/utils/lifecycle.js:132:5)
+36 verbose stack     at LOOP (/Users/yichao/.npm-packages/lib/node_modules/npm/node_modules/slide/lib/chain.js:7:26)
+36 verbose stack     at /Users/yichao/.npm-packages/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+37 verbose cwd /Users/yichao/Desktop/FullstackAcademy/projects/nodeSchool/howtonpm
+38 error Darwin 15.6.0
+39 error argv "/usr/local/bin/node" "/Users/yichao/.npm-packages/bin/npm" "publish"
+40 error node v6.2.2
+41 error npm  v4.0.2
+42 error code ENEEDAUTH
+43 error need auth auth required for publishing
+44 error need auth You need to authorize this machine using `npm adduser`
+45 verbose exit [ 1, true ]
