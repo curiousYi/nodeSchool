@@ -5,11 +5,17 @@ var counter = 0;
 function write(buffer, encoding, next){
     var str = buffer.toString();
     var output;
-    if(counter % 2 === 0){output = str.toLowerCase() }
-    else{output = str.toUpperCase();
+
+    if(counter % 2 === 1){
+        output = str.toUpperCase();
+        output += '\n';
     }
-    this.push(output)
+    else{
+        output = str.toLowerCase();
+        output += '\n';
+    }
     counter++;
+    this.push(output)
     next();
 
 }
@@ -20,7 +26,10 @@ function end (done) {
 
 
 process.stdin
-    .pipe(split(/(\r?\n)/))
+    .pipe(split())
     .pipe(through(write, end))
     .pipe(process.stdout)
 ;
+
+
+/* /(\r?\n)/  */

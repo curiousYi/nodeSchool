@@ -9,7 +9,7 @@ function write(buffer, encoding, next){
 }
 
 function end (done) {
-        done();
+    done();
 }
 
 var through = through2(write, end);
